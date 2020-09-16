@@ -32,7 +32,7 @@
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
-  --clr-gold: #c59d5f;
+  --clr-gold: #245C60;
   --clr-black: #222;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
@@ -163,7 +163,7 @@ main {
 }
 .title h2 {
   color: var(--clr-gold);
-  font-family: "Great Vibes", cursive;
+  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 .section-center {
