@@ -195,6 +195,7 @@ main {
   cursor: pointer;
   color: var(--clr-gold);
   transition: var(--transition);
+  outline: none;
 }
 .question-btn:hover {
   transform: rotate(90deg);
