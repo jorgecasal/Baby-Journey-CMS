@@ -15,23 +15,23 @@
   --clr-primary-9: hsl(205, 90%, 88%);
   --clr-primary-10: hsl(205, 100%, 96%);
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-1: #102a42;
   --clr-grey-2: hsl(211, 39%, 23%);
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-5: #617d98;
   --clr-grey-6: hsl(209, 23%, 60%);
   --clr-grey-7: hsl(211, 27%, 70%);
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-10: #f1f5f8;
   --clr-white: #fff;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
-  --clr-gold: #245C60;
+  --clr-gold: #008081;
   --clr-black: #222;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
@@ -51,9 +51,9 @@
   box-sizing: border-box;
 }
 body {
-  font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
+  font-family: "Open Sans", sans-serif;
+  background: #f1f5f8;
+  color: #102a42;
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -63,7 +63,7 @@ a {
 }
 
 h2 {
-  letter-spacing: var(--spacing);
+  letter-spacing: 0.25rem;
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
@@ -76,7 +76,7 @@ h2 {
 
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  color: #617d98;
 }
 @media screen and (min-width: 800px) {
   h2 {
@@ -90,20 +90,20 @@ p {
 .btn {
   text-transform: uppercase;
   background: transparent;
-  color: var(--clr-black);
+  color: black;
   padding: 0.375rem 0.75rem;
-  letter-spacing: var(--spacing);
+  letter-spacing: 0.25rem;
   display: inline-block;
-  transition: var(--transition);
+  transition: all 0.3s linear;
   font-size: 0.875rem;
-  border: 2px solid var(--clr-black);
+  border: 2px solid black;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
 }
 .btn:hover {
-  color: var(--clr-white);
-  background: var(--clr-black);
+  color: white;
+  background: black;
 }
 .section {
   padding: 5rem 0;
@@ -119,25 +119,21 @@ p {
     width: 95vw;
   }
 }
-main {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-}
+
 .title {
   margin-top: 15vh;
   margin-bottom: 4rem;
 }
 .title h2 {
-  color: var(--clr-gold);
+  color: #008081;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
 .section-center {
-  max-width: var(--fixed-width);
+  max-width: 620px;
 }
 .question {
-  background: var(--clr-white);
+  background: white;
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
   padding: 1.5rem 1.5rem 0 1.5rem;
@@ -152,16 +148,16 @@ main {
 }
 .question-title p {
   margin-bottom: 0;
-  letter-spacing: var(--spacing);
-  color: var(--clr-grey-1);
+  letter-spacing: 0.25rem;
+  color: #102a42;
 }
 .question-btn {
   font-size: 1.5rem;
   background: transparent;
   border-color: transparent;
   cursor: pointer;
-  color: var(--clr-gold);
-  transition: var(--transition);
+  color: #008081;
+  transition: all 0.3s linear;
   outline: none;
 }
 .question-btn:hover {
